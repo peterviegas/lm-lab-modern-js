@@ -4,5 +4,5 @@
  */
 
 export function allTheNumbers(numbers, moreNumbers) {
-  return [];
+    return [...numbers, ...moreNumbers];
 }

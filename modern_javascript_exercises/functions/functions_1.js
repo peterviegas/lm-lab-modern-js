@@ -8,7 +8,7 @@
 const people = ["Harry", "Hermione", "Ron"];
 
 function logPerson(person) {
-  console.log("The person is " + person);
+    console.log("The person is " + person);
 }
 
 people.forEach(logPerson);
@@ -17,15 +17,22 @@ people.forEach(logPerson);
 // Store the logPerson() function in a variable called performLogPerson
 
 // Your code here
+//const performLogPerson = logPerson("Test Person");
+const performLogPerson = people.map((item) => logPerson(item));
+
 
 // Arrow Functions in a Variable
 // Write a version of logPerson() as an Arrow Function and store it in a variable called arrowVersionOfLogPerson
 
 // Your code here
+const arrowVersionOfLogPerson = person => console.log("The person is " + person);
+
+people.forEach(function(person) {
+    console.log("The person is " + person);
+})
 
 // Anonymous Arrow Functions
 // Replace logPerson below with an Anonymous Arrow Function that does the same thing!
-
-people.forEach(logPerson);
+people.forEach((person) => console.log("The person is " + person));
 
 // In JavaScript there are lots of ways to write functions. There is no right or wrong way, but arrow functions are the most modern. 🙂
