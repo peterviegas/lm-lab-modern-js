@@ -18,7 +18,8 @@ people.forEach(logPerson);
 
 // Your code here
 //const performLogPerson = logPerson("Test Person");
-const performLogPerson = people.map((item) => logPerson(item));
+//const performLogPerson = people.map((item) => logPerson(item));
+const performLogPerson = logPerson;
 
 
 // Arrow Functions in a Variable

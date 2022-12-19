@@ -9,5 +9,5 @@ export function sequence(order) {
 
     return first + ", " + second + ", " + third;
 
-    //return order.toString().replace(/,/g, ", "); Essa tinha sido a minha solução, mas precisa utilizar a destructuring
+    //return order.toString().replace(/,/g, ", "); //Essa tinha sido a minha solução, mas precisa utilizar a destructuring
 }
