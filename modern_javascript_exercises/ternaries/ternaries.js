@@ -7,5 +7,6 @@
 }*/
 
 export function sayHello(name) {
-    return !name ? `Hello you!` : `Hello, ${name}!`;
+    //return !name ? `Hello you!` : `Hello, ${name}!`;
+    return (name === undefined || name === '') ? `Hello you!` : `Hello, ${name}!`;
 }
